@@ -3,9 +3,10 @@ require('./src/db/connection')
 const app = express();
 const port = process.env.PORT || 3000;
 const User = require('./src/models/usersSchema')
+const cors = require("cors");
 
 app.use(express.json())
-
+app.use(cors());
 // Using async-await
 
 app.post("/users", async (req, res) => {
