@@ -1,0 +1,13 @@
+{
+    "apps": [
+        {
+            "name": "server",
+            "script": "src/server.ts",
+            "watch": [
+                "./src"
+            ],
+            "instances": 0,
+            "exec_mode": "cluster"
+        }
+    ]
+}
