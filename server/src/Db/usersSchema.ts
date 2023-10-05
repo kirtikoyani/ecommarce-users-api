@@ -46,7 +46,6 @@ const userDetails = new mongoose.Schema({
   },
   businessCategory: {
     type: String,
-    required: true,
   },
   role: {
     type: String,
